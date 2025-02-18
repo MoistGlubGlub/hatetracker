@@ -4,7 +4,7 @@ A python package that contains various utilities for tracking and indexing hate 
 
 ## Installation
 
-To install, clone this repository, and run:
+To install, clone this repository and then run:
 
 ```
 pip install <repository_directory>
