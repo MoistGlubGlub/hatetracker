@@ -105,11 +105,16 @@ def text_rank(
 ) -> None:
     """Perform TextRank keyword extraction on text files in a directory.
 
+    This function applies the TextRank algorithm to extract key phrases from
+    text files within the specified directory. The extracted phrases are saved
+    in CSV format. The process can handle a single file, multiple files, or
+    entire directory structures recursively.
+
     Args:
         input_path (os.PathLike):
             Path to the input file or directory.
         output_path (os.PathLike):
-            Path where the output CSVs will be saved.
+            Path where the output CSV(s) will be saved.
         recursive (bool):
             If True, process subdirectories recursively.
         input_file_suffix (str):
@@ -118,9 +123,6 @@ def text_rank(
             Maximum number of phrases to extract per file.
         file_batch_size (Optional[int]):
             Number of files to process in each batch.
-
-    Returns:
-        None
     """
     input_path = pathlib.Path(input_path)
     output_path = pathlib.Path(output_path)
