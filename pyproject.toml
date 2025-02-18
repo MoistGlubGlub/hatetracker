@@ -22,3 +22,6 @@ dependencies = [
     "fire",
     "tqdm"
 ]
+
+[project.scripts]
+hatetracker-rank = "hatetracker.textrank:main"

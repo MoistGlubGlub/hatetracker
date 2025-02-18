@@ -185,5 +185,9 @@ def text_rank(
         )
 
 
-if __name__ == "__main__":
+def main() -> None:
     fire.Fire(text_rank)
+
+
+if __name__ == "__main__":
+    main()
