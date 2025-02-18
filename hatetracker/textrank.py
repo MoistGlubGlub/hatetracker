@@ -164,6 +164,7 @@ def text_rank(
             warnings.warn(
                 f"File {output_path} already exists, skipping", RuntimeWarning
             )
+            continue
 
         with open(curr_output_path, "w") as f:
             writer = csv.DictWriter(f, fieldnames=phrases[0].keys())
